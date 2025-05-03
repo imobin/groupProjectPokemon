@@ -17,10 +17,7 @@ if (whishList) {
 // Unique
 whishList= new Set(whishList);
 
-// Convert back the set to array
-whishList = [...whishList]
-
-// function salam(){
+// Convert back the set to array+
 //     element.innerHTML = ""
 // }
 
