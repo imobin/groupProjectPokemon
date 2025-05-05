@@ -10,13 +10,14 @@ const cards = document.getElementById("cards")
 
 
 
-let whishList = localStorage.getItem("whishlist")
+let whishList = localStorage.getItem("wishlist")
 if (whishList) {
   whishList = JSON.parse(whishList)
 // whishList = whishList.slice(1, whishList.length - 1).split(",")
 // Unique
-whishList= new Set(whishList);
-
+  whishList = new Set(whishList);
+  whishList = [...whishList]
+  console.log(whishList)
 // Convert back the set to array+
 //     element.innerHTML = ""
 // }
